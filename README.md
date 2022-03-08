@@ -1,2 +1,2 @@
-# Aulas.Exerc-cio.JavaScript-CursoEmVideo
+# Aulas.Exercicios.JavaScript-CursoEmVideo
 Exercícios práticos da aulas do CursoEmVideo JavaScript
