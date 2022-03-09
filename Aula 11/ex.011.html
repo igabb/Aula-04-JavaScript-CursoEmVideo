@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detector de Nacionalidade Brasileira</title>
+</head>
+<body>
+    <style>
+        body {
+            font: normal 20pt Arial;
+        }
+    </style>
+    <h1>Detector de Nacionalidade Brasileira</h1>
+    Digite a sua Nacionalidade <input type="text" name="txtn1" id="txtn1">
+    <input type="button" value="Verificar" onclick="conferir()">
+    <div id="res">
+
+    </div>
+    <script>
+        function conferir() {
+            var tn1 = window.document.querySelector('input#txtn1')
+            var res = window.document.getElementById('res')
+            var r = tn1.value
+            res.innerHTML = `<p>Olá bem vindo ao Brasil! você possui a nacionalidade <strong>${r}!</strong></p>`
+            if (r == 'Brasileira') {
+                res.innerHTML += '<p>Dirija-se ao setor de bagagens!</p>'
+            } else {
+                res.innerHTML += '<p>Dirija-se ao stand de informações para um guia de sua nacionalidade lhe auxiliar no setor de bagagens!</p>'
+            }
+            res.innerHTML += `<p>Aproveite a sua estadia em nosso país<p/>`
+        }
+    </script>
+</body>
+</html>
